@@ -2,20 +2,20 @@
 
 Dieses PHP-Skript ermöglicht die automatische Aktualisierung von DNS-Einträgen über die Netcup DNS API – ideal für dynamische IP-Adressen (DDNS), wenn dein Internetanbieter regelmäßig deine IP-Adresse ändert.
 
-## 🔧 Funktionsweise
+## Funktionsweise
 
 Das Skript:
 - Authentifiziert sich über die Netcup DNS API,
 - Ruft den aktuellen DNS-Eintrag für die angegebene Subdomain ab,
 - Aktualisiert den A- und/oder AAAA-Eintrag mit der übermittelten IP-Adresse.
 
-## ✅ Voraussetzungen
+## Voraussetzungen
 
 - PHP ≥ 7.0
 - Zugriff auf die Netcup DNS API (API-Key, API-Passwort, Kundennummer)
 - Eine bei Netcup registrierte Domain mit DNS-Zugriff
 
-## ⚙️ Konfiguration
+## Konfiguration
 
 ### 1. `.env`-Datei erstellen
 
