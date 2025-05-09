@@ -6,7 +6,7 @@ if (!file_exists('.env')) {
 
 $config = parse_ini_file('.env', false, INI_SCANNER_TYPED);
 
-if (!$config || !isset($config['customerNumber'], $config['apiKey'], $config['apiPassword'])) {
+if (!$config || !isset($config['customerNumber'], $config['apiKey'], $config['apiPassword'], $config['domainname'], $config['hostname'])) {
     error_exit("Fehler: Ungültige Konfiguration. Bitte überprüfen Sie die .env Datei.");
 }
 
